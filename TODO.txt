@@ -1,0 +1,8 @@
+- documentation
+- test cans on other partitions
+- test corner cases
+- support Qt 5
+- command-line example app
+- better API
+- cross-platform trash library that uses proprietary API on proprietary OSes?
+
