@@ -3,7 +3,7 @@
 
 #include <QStringList>
 
-namespace XdgTrashInfo {
+namespace QorbeilleInfo {
 
 struct Info {
 	QString deletionDate;
@@ -14,6 +14,6 @@ struct Info {
 Info getInfoFrom(const QString &trashCan, const QString &infoName);
 QStringList getListInfo(const QString &trashCan);
 
-} // namespace XdgTrashInfo
+} // namespace QorbeilleInfo
 
 #endif /* XDG_TRASHINFO_H_ */

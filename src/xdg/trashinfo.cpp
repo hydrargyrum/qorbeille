@@ -3,15 +3,15 @@
 #include <QDir>
 #include "xdg/trash.h"
 
-namespace XdgTrash {
+namespace Qorbeille {
 QString getInfoFile(const QString&, const QString&); // private impl in trash.cpp
 }
 
-namespace XdgTrashInfo {
+namespace QorbeilleInfo {
 
 
 Info getInfoFrom(const QString &trashCan, const QString &infoName) {
-	QSettings iniData(XdgTrash::getInfoFile(trashCan, infoName), QSettings::IniFormat);
+	QSettings iniData(Qorbeille::getInfoFile(trashCan, infoName), QSettings::IniFormat);
 	if (iniData.status() != QSettings::NoError)
 		return Info();
 	Info info;
@@ -25,4 +25,4 @@ QStringList getListInfo(const QString &trashCan) {
 	return QDir(trashCan).entryList(QStringList("*.trashinfo"));
 }
 
-} // namespace XdgTrashInfo
+} // namespace QorbeilleInfo

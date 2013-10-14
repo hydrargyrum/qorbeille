@@ -32,7 +32,7 @@ void TrashTest::basicTrash() {
 	QString originalPath = f.fileName();
 
 	// trash
-	QVERIFY(XdgTrash::trashFile(originalPath));
+	QVERIFY(Qorbeille::trashFile(originalPath));
 	QVERIFY(!QFile(originalPath).exists());
 }
 
@@ -46,14 +46,14 @@ void TrashTest::restore() {
 
 	// trash file
 	QString infoName;
-	QVERIFY(XdgTrash::trashFile(originalPath, &infoName));
+	QVERIFY(Qorbeille::trashFile(originalPath, &infoName));
 	QVERIFY(!QFile(originalPath).exists());
 	QVERIFY(!infoName.isEmpty());
 
 	QString can = XdgDirs::trashHome();
 
 	// restore
-	QVERIFY(XdgTrash::restoreFile(can, infoName, originalPath));
+	QVERIFY(Qorbeille::restoreFile(can, infoName, originalPath));
 
 	// check restored
 	QVERIFY(QFile(originalPath).exists());

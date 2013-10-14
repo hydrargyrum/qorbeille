@@ -2,7 +2,7 @@ QT += core
 QT -= gui widgets
 
 # CONFIG += 
-TARGET = trash
+TARGET = qorbeille
 
 #CONFIG   += console
 #CONFIG   -= app_bundle

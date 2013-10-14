@@ -2,7 +2,7 @@ QT += core testlib
 QT -= gui widgets
 
 CONFIG += qtestlib
-TARGET = test_trash
+TARGET = test_qorbeille
 
 #CONFIG += console
 #CONFIG -= app_bundle

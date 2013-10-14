@@ -11,7 +11,7 @@
 
 /* http://www.ramendik.ru/docs/trashspec.html (0.7) */
 
-namespace XdgTrash {
+namespace Qorbeille {
 
 // TODO handle trashing a file within trash
 
@@ -197,4 +197,4 @@ bool restoreFile(const QString &trashCan, const QString &infoName, const QString
 	return ok;
 }
 
-} // namespace XdgTrash
+} // namespace Qorbeille

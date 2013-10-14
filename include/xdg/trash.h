@@ -3,7 +3,7 @@
 
 #include <QString>
 
-namespace XdgTrash {
+namespace Qorbeille {
 
 QString findMountedRoot(const QString &originalPath);
 
