@@ -17,6 +17,7 @@ SOURCES += src/xdg/dirs.cpp \
     src/xdg/trashinfo.cpp \
     tests/main_test.cpp \
     tests/tst_dirs.cpp \
+    tests/tst_trash.cpp
 
 HEADERS += \
     include/xdg/trash.h \
